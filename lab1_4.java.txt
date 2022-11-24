@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Home {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите колличество точек:");
+        int T = in.nextInt();
+        System.out.print("Введите длину радиуса:");
+        int R = in.nextInt();
+        int k = 0;
+        for (int i = 1; i <= T; i += 1) {
+            System.out.print("Введите координату x" + i + ":");
+            float x = in.nextFloat();
+            System.out.print("Введите координату y" + i + ":");
+            float y = in.nextFloat();
+            if ((Math.sqrt(x * x + y * y)) <= R) {
+                k += 1;
+            }
+        }
+        System.out.print("В окружность попала:" + k + "точка");
+    }
+}
