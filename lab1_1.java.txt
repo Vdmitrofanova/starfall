@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Class {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите день вашего рождения:");
+        int day = in.nextInt();
+        System.out.print("Введите месяц вашего рождения:");
+        int month = in.nextInt();
+        System.out.print("Введите год вашего рождения:");
+        int year = in.nextInt();
+        int day_2 = day-25;
+        int month_2 = month-11;
+        int year_2 = 2022-year;
+        int y = 2021-year;
+        int m = 11+12-12;
+        if (month < 12 && month > 0 && year < 2023 && year > 1920 && day < 32 && day > 0) {
+            System.out.print(" Лет: " + year_2);
+            System.out.print(" Месяцев: " + Math.abs(month_2));
+            System.out.print(" Дней: " + Math.abs(day_2));
+        } else if (month == 12 && year < 2023 && year > 1920 && day < 32 && day > 0) {
+            System.out.print(" Лет: " + y);
+            System.out.print(" Месяцев: " + m);
+            System.out.print(" Дней: " + Math.abs(day_2));
+        } else {
+            System.out.print("Ошибка!");
+        }
+            in.close();
+        }
+
+    }
