@@ -24,7 +24,7 @@ public class Class {
             System.out.print(" Месяцев: " + m);
             System.out.print(" Дней: " + Math.abs(day_2));
         } else {
-            System.out.print("Ошибка!");
+            System.out.print("Ошибка!"); #Очень прикольно
         }
             in.close();
         }
